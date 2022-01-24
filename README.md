@@ -9,3 +9,6 @@ prerequisites :
 2) SQL database named sqli-demo with tables : fruits, shipping & users. Fill up the tables with random data
 
 3) Change the connection string to match your SQL server in db_connections.vb file
+
+
+TO DO : Clean up code with more comments in place for easier understanding
