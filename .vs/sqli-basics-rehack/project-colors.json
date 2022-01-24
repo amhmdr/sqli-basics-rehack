@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0d83e09b-afc1-4cd3-87c5-fe7aa7238a8a": {
+      "ProjectGuid": "0d83e09b-afc1-4cd3-87c5-fe7aa7238a8a",
+      "DisplayName": "sqli-basics-rehack",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
