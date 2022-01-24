@@ -2,7 +2,7 @@
 
 Module db_connections
 
-    Public connection As New SqlConnection("Server= ; Database = sqli-demo; Integrated Security = true")
+    Public connection As New SqlConnection("Server= LAPTOP-N8MC9U3U; Database = sqli-demo; Integrated Security = true")
     Public dataadapter As New SqlDataAdapter
     Public ds As New DataSet()
 

@@ -9,18 +9,36 @@ Public Class Form1
         If (connection.State = ConnectionState.Open) Then
         End If
 
+
+        'Below are the variables to store users input
+        Dim uname As String
+        Dim pword As String
+
+        'Assigning the values to the variables
+        uname = txtUname.Text
+        pword = txtPword.Text
+
+        'creating a variable to store SQL statement
         cmd = connection.CreateCommand()
         cmd.CommandType = CommandType.Text
-        cmd.CommandText = "select * from users where username='" + txtUname.Text + "' and password ='" + txtPword.Text + "' "
+        'Creating a SQL statement using users values
+        cmd.CommandText = "select * from users where username='" + uname + "' and password ='" + pword + "' "
+
+        'Executing query
         Dim x = cmd.ExecuteReader()
-
+        Dim hasRow As Boolean = False
         While x.Read
+            'If it returns a ROW proceed to HOME screen
             If x.HasRows = True Then
-                MessageBox.Show("Hello")
-
-                home.Show()
+                hasRow = True
             End If
         End While
+
+        If hasRow = True Then
+            'Show home screen
+            x.Close()
+            home.Show()
+        End If
 
     End Sub
 
